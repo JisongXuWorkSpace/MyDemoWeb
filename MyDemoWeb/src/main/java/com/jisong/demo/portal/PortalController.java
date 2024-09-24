@@ -31,7 +31,7 @@ public class PortalController {
 		if(!Objects.isNull(username) && !Objects.isNull(password)) {
 			var opt= loginDAO.getLoginInfo(username,password);
 			if(opt.isPresent()) {
-				
+				//TODO
 				var role =opt.get().getRoles();
 				if(role != null && !role.isEmpty()) {
 					for(Role r :role) {
